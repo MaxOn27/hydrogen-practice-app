@@ -3,15 +3,16 @@ import {useFetcher, useMatches} from '@remix-run/react';
 import {Button} from '~/components';
 import {CartAction} from '~/lib/type';
 
-export function AddToCartButton({
-                                  children,
-                                  lines,
-                                  className = '',
-                                  variant = 'primary',
-                                  width = 'full',
-                                  analytics,
-                                  ...props
-                                }: {
+export function AddToCartButton(
+  {
+    children,
+    lines,
+    className = '',
+    variant = 'primary',
+    width = 'full',
+    analytics,
+    ...props
+  }: {
   children: React.ReactNode;
   lines: CartLineInput[];
   className?: string;
